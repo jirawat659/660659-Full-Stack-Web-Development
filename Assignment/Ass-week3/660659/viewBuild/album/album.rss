@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>viewBuild</title>
+   	<link>.</link>
+        <generator>jAlbum 18.1</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>v1</title>
+            <link>slides/v1.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v1.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v1.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/v1.jpg</guid>
+        </item>
+        <item>
+            <title>v2</title>
+            <link>slides/v2.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v2.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v2.jpg" width="960" height="472"/>
+            <guid isPermaLink="false">slides/v2.jpg</guid>
+        </item>
+        <item>
+            <title>v3</title>
+            <link>slides/v3.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v3.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v3.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/v3.jpg</guid>
+        </item>
+        <item>
+            <title>v4</title>
+            <link>slides/v4.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v4.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v4.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/v4.jpg</guid>
+        </item>
+        <item>
+            <title>v5</title>
+            <link>slides/v5.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v5.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v5.jpg" width="690" height="460"/>
+            <guid isPermaLink="false">slides/v5.jpg</guid>
+        </item>
+        <item>
+            <title>v6</title>
+            <link>slides/v6.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v6.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v6.jpg" width="600" height="400"/>
+            <guid isPermaLink="false">slides/v6.jpg</guid>
+        </item>
+        <item>
+            <title>v7</title>
+            <link>slides/v7.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v7.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v7.jpg" width="800" height="534"/>
+            <jalbum:exif originalDate="Mon, 10 Jun 1471 19:11:42 +0700" cameraMake="Canon" cameraModel="Canon EOS 70D"/>
+            <guid isPermaLink="false">slides/v7.jpg</guid>
+        </item>
+        <item>
+            <title>v8</title>
+            <link>slides/v8.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v8.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v8.jpg" width="755" height="600"/>
+            <guid isPermaLink="false">slides/v8.jpg</guid>
+        </item>
+        <item>
+            <title>v9</title>
+            <link>slides/v9.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v9.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v9.jpg" width="600" height="450"/>
+            <guid isPermaLink="false">slides/v9.jpg</guid>
+        </item>
+        <item>
+            <title>v10</title>
+            <link>slides/v10.html</link>
+            <pubDate>Wed, 03 Apr 2019 15:56:53 +0700</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/v10.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/v10.jpg" width="800" height="533"/>
+            <guid isPermaLink="false">slides/v10.jpg</guid>
+        </item>
+    </channel>
+</rss>

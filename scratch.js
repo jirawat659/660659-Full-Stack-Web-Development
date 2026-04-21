@@ -3,28 +3,34 @@ const path = require('path');
 
 const config = [
     {
-        hubDir: 'Example/Ass4',
-        targetDir: 'Example/Ass4/Assignment 4-2 - BS5/html',
-        title: 'Bootstrap 5 Utilities',
+        hubDir: 'Example/Ex-week4',
+        targetDir: 'Example/Ex-week4/Assignment 4-2 - BS5/html',
+        title: 'Bootstrap 5 Utilities (Week 4)',
         prefix: 'Assignment 4-2 - BS5/html'
     },
     {
-        hubDir: 'Example/Ass5',
-        targetDir: 'Example/Ass5/660659/html',
-        title: 'Bootstrap 5 Components',
+        hubDir: 'Example/Ex-week5',
+        targetDir: 'Example/Ex-week5/660659/html',
+        title: 'Bootstrap 5 Components (Week 5)',
         prefix: '660659/html'
     },
     {
-        hubDir: 'Example/Ass8',
-        targetDir: 'Example/Ass8/660746Assignment 6 - BS5-4',
-        title: 'Flexbox Masterclass',
+        hubDir: 'Example/Ex-week8',
+        targetDir: 'Example/Ex-week8/660746Assignment 6 - BS5-4',
+        title: 'Flexbox Masterclass (Week 8)',
         prefix: '660746Assignment 6 - BS5-4'
     },
     {
-        hubDir: 'Example/Ass9',
-        targetDir: 'Example/Ass9',
-        title: 'Responsive Design',
+        hubDir: 'Example/Ex-week9',
+        targetDir: 'Example/Ex-week9',
+        title: 'Responsive Design (Week 9)',
         prefix: '.'
+    },
+    {
+        hubDir: 'Example/Ex-week10',
+        targetDir: 'Example/Ex-week10/JavaScript Front-End',
+        title: 'JavaScript Front-End (Week 10)',
+        prefix: 'JavaScript Front-End'
     }
 ];
 
@@ -89,11 +95,9 @@ config.forEach(c => {
         };
     });
     
-    // Sort items naturally
     items.sort((a,b) => a.name.localeCompare(b.name, 'en', {numeric: true}));
-    
-    // the hub is at Example/AssX, so depth is 2
     const outputHtml = generateHtml(c.title, items, 2);
+    if (!fs.existsSync(c.hubDir)) fs.mkdirSync(c.hubDir, { recursive: true });
     fs.writeFileSync(path.join(c.hubDir, 'index.html'), outputHtml);
 });
-console.log('Hub pages generated!');
+console.log('Hub pages rebuilt!');

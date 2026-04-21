@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toast Positions</title>
+
+<link href="../bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../bootstrap-icons-1.5.0/bootstrap-icons.css" rel="stylesheet">
+<script src="../bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function showToast(id) {
+    const t = document.getElementById(id);
+    const toast = new bootstrap.Toast(t);
+    toast.show();
+}
+</script>
+</head>
+
+<body class="p-4 text-center">
+
+<!-- ===== BUTTONS ===== -->
+<button class="btn btn-primary m-1" onclick="showToast('toastTopLeft')">Top-Left</button>
+<button class="btn btn-primary m-1" onclick="showToast('toastTopCenter')">Top-Center</button>
+<button class="btn btn-primary m-1" onclick="showToast('toastTopRight')">Top-Right</button>
+<br><br>
+
+<button class="btn btn-primary m-1" onclick="showToast('toastCenterLeft')">Center-Left</button>
+<button class="btn btn-primary m-1" onclick="showToast('toastCenterCenter')">Center-Center</button>
+<button class="btn btn-primary m-1" onclick="showToast('toastCenterRight')">Center-Right</button>
+<br><br>
+
+<button class="btn btn-primary m-1" onclick="showToast('toastBottomLeft')">Bottom-Left</button>
+<button class="btn btn-primary m-1" onclick="showToast('toastBottomCenter')">Bottom-Center</button>
+<button class="btn btn-primary m-1" onclick="showToast('toastBottomRight')">Bottom-Right</button>
+
+<!-- ===== TOASTS ===== -->
+
+<div id="toastTopLeft" class="toast position-fixed top-0 start-0 m-3">
+  <div class="toast-body">Top Left Toast</div>
+</div>
+
+<div id="toastTopCenter" class="toast position-fixed top-0 start-50 translate-middle-x m-3 bg-warning">
+  <div class="toast-body">Top Center Toast</div>
+</div>
+
+<div id="toastTopRight" class="toast position-fixed top-0 end-0 m-3">
+  <div class="toast-body">Top Right Toast</div>
+</div>
+
+<div id="toastCenterLeft" class="toast position-fixed top-50 start-0 translate-middle-y m-3">
+  <div class="toast-body">Center Left Toast</div>
+</div>
+
+<div id="toastCenterCenter" class="toast position-fixed top-50 start-50 translate-middle bg-info text-white" data-bs-autohide="false">
+  <div class="toast-body d-flex align-items-center">
+    <i class="bi bi-exclamation-circle me-2"></i>
+    Center Center Toast
+  </div>
+</div>
+
+<div id="toastCenterRight" class="toast position-fixed top-50 end-0 translate-middle-y m-3">
+  <div class="toast-body">Center Right Toast</div>
+</div>
+
+<div id="toastBottomLeft" class="toast position-fixed bottom-0 start-0 m-3">
+  <div class="toast-body">Bottom Left Toast</div>
+</div>
+
+<div id="toastBottomCenter" class="toast position-fixed bottom-0 start-50 translate-middle-x m-3 bg-secondary text-white">
+  <div class="toast-body d-flex align-items-center">
+    <i class="bi bi-exclamation-circle me-2"></i>
+    Bottom Center Toast
+  </div>
+</div>
+
+<div id="toastBottomRight" class="toast position-fixed bottom-0 end-0 m-3">
+  <div class="toast-body">Bottom Right Toast</div>
+</div>
+
+</body>
+</html>

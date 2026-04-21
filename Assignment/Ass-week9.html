@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center">แบบฟอร์มนักศึกษา</h2>
+
+        <form>
+            <div class="row">
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">เพศ</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" required>
+                        <label class="form-check-label">ชาย</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender">
+                        <label class="form-check-label">หญิง</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender">
+                        <label class="form-check-label">ไม่ระบุ</label>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">ชื่อ-นามสกุล</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">รหัสนักศึกษา</label>
+                    <input type="number" class="form-control" required>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">วันเกิด</label>
+                    <input type="date" class="form-control" required>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">ช่วงวัย</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="age" required>
+                        <label class="form-check-label">วัยเด็ก 0-20 ปี</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="age">
+                        <label class="form-check-label">วัยหนุ่ม 20-60 ปี</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="age">
+                        <label class="form-check-label">วัยชรา 60 ปี ขึ้นไป</label>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">คณะ</label>
+                    <select class="form-select" required>
+                        <option selected disabled>-- เลือกคณะ --</option>
+                        <option>คณะบริหารธุรกิจ</option>
+                        <option>คณะนิติศาสตร์</option>
+                        <option>คณะนิเทศศาสตร์</option>
+                        <option>คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">สาขา</label>
+                    <select class="form-select" required>
+                        <option selected disabled>-- เลือกสาขา --</option>
+                        <option>วิทยาการคอมพิวเตอร์</option>
+                        <option>เทคโนโลยีสารสนเทศ</option>
+                        <option>การบัญชี</option>
+                        <option>การตลาด</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">สิ่งที่ชอบ</label>
+                    <select class="form-select" multiple>
+                        <option>เล่นเกม</option>
+                        <option>ฟังเพลง</option>
+                        <option>ดูหนัง</option>
+                        <option>อ่านหนังสือ</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">อาหารที่ชอบ</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">เครื่องดื่มที่ชอบ</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">สีที่ชอบ</label>
+                    <input type="color" class="form-control form-control-color">
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">งานอดิเรก</label>
+                    <textarea class="form-control" rows="2"></textarea>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                    <label class="form-label">ตัวเลขที่รวมกันได้ 20</label>
+                    <div class="d-flex flex-wrap gap-2">
+                        <input type="checkbox" class="btn-check" id="n1">
+                        <label class="btn btn-outline-primary" for="n1">1</label>
+                        <input type="checkbox" class="btn-check" id="n2">
+                        <label class="btn btn-outline-primary" for="n2">2</label>
+                        <input type="checkbox" class="btn-check" id="n3">
+                        <label class="btn btn-outline-primary" for="n3">3</label>
+                        <input type="checkbox" class="btn-check" id="n4">
+                        <label class="btn btn-outline-primary" for="n4">4</label>
+                        <input type="checkbox" class="btn-check" id="n5">
+                        <label class="btn btn-outline-primary" for="n5">5</label>
+                        <input type="checkbox" class="btn-check" id="n6">
+                        <label class="btn btn-outline-primary" for="n6">6</label>
+                        <input type="checkbox" class="btn-check" id="n7">
+                        <label class="btn btn-outline-primary" for="n7">7</label>
+                        <input type="checkbox" class="btn-check" id="n8">
+                        <label class="btn btn-outline-primary" for="n8">8</label>
+                        <input type="checkbox" class="btn-check" id="n9">
+                        <label class="btn btn-outline-primary" for="n9">9</label>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 form-check form-switch mb-4">
+                    <input class="form-check-input" type="checkbox" required>
+                    <label class="form-check-label">ยืนยันเป็นมนุษย์</label>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <button type="submit" class="btn btn-primary px-5">
+                        บันทึกข้อมูล
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

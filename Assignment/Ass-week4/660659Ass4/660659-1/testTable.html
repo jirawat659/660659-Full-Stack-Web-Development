@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<HTML>
+
+<HEAD>
+    <meta charset="UTF-8">
+    <TITLE> เว็บไซด์ของฉัน </TITLE>
+    <!--External style sheet-->
+    <link rel="stylesheet" type="text/css" href="mystyle1.css">
+    <!--Internal style sheet-->
+    <style>
+        body {
+            background-color: lightblue;
+            background-image: url("picture/bg5.gif");
+        }
+
+        h2 {
+            color: SlateBlue;
+            text-align: right;
+            font-size: 30px;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 30px;
+            color: red;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid red;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        td {
+            background-color: yellow;
+            color: blue;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <h1>My WebSites</h1>
+    <!--Inline style-->
+    <h1 style="color:blue; text-align:center; font-size:70px;">My WebSite</h1>
+    <!-- กากใส่ภาพเคลื่อนไหวด้วย <marquee> -->
+    <div>
+        <marquee direction="left" scrollamount="50" loop="2">
+            <img src="picture/pic1.jpg" />&nbsp;&nbsp;&nbsp;
+            <img src="picture/pic2.jpg" /> &nbsp;&nbsp;&nbsp;
+            <img src="picture/pic3.jpg" />
+        </marquee>
+    </div>
+    <br>
+    <br>
+    <!-- การเห็นก็ element selector, id selector, class selector -->
+    <div>
+        <h2>ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน </h2>
+        <p><strong>ข้อมูลส่านตัว</strong></p>
+        <h3>จิรวัฒน์ จุลลวาทีเลิศ</h3>
+        <p id="p1">สาขาวิชาวิทยาการคอมพิวเตอร์</p>
+        <p class="p2">คณะวิทยาศาสตร์และเทดโนโลยี</p>
+        <p class="center large">มหาวิทยาลัยหัวเฉียวเฉลิมพระเกียรติ</p>
+    </div>
+    <br>
+
+    <!-- ทดลองการเชื่อมโยงไปยังที่ต่าง ๆ -->
+    <p>
+        <a href="home.html">
+            <img src="button/home1.jpg" width="200" height="60" />
+        </a>
+        <a href="index.html">
+            <img src="button/index1.jpg" width="200" height="60" />
+        </a>
+        <a href="https://www.google.com">
+            <img src="button/google.png" width="200" height="60" />
+        </a>
+        <a href="mailto:hongtae32548@gmail.com">
+            <img src="button/contact1.jpg" width="200" height="60" />
+        </a>
+    </p>
+    <br>
+
+    <!-- การสร้าง table and format CSS ท่านที่ข้างบนค่าแท้เป็น Internal style sheet -->
+    <center>
+        <table style="width: 40%">
+            <caption>
+                <h1>Profile</h1>
+            </caption>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td>Jirawat</td>
+                <td>Junlawatilert</td>
+                <td>hongtae32548@hotmail.com</td>
+            </tr>
+        </table>
+    </center>
+
+    <br>
+    <marquee>
+        <img src="picture/pic1.jpg" />&nbsp;&nbsp;&nbsp;
+        <img src="picture/pic2.jpg" /> &nbsp;&nbsp;&nbsp;
+        <img src="picture/pic3.jpg" />
+    </marquee>
+    <br>
+    <hr>
+    <br>
+    <address>
+        written by Jirawat <br>
+        Visit us at cs.hcu.ac.th <br>
+        Thailand
+    </address>
+</BODY>
+
+</HTML>

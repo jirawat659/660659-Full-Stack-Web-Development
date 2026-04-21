@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <META charset="UTF8">
+  <TITLE> My List </TITLE>
+ </HEAD>
+
+ <BODY style="background-color:Green; color:Yellow;">
+	<h1 style="background-color:Blue; text-align:center;">
+		Topic of List
+	</h1>
+
+	<ol>
+		<li>Ant</li>
+		<li>Bee</li>
+		<li>Cat</li>
+		<li>Dog</li>
+	</ol>
+
+	<ol type="I">
+		<li>Red</li>
+		<li>Green</li>
+		<li>Blue</li>
+	</ol>
+
+	<ul>
+		<li>A</li>
+		<li>B</li>
+		<li>C</li>
+	</ul>
+
+	<ul type="squre">
+		<li>disc</li>
+		<li>circle</li>
+		<li>square</li>
+	</ul>
+
+	<dl>
+		<dt>???????</dt>
+		<dt>???????????????</dt>
+		<dt>????????</dt>
+		<dt>??????????</dt>
+		<dt>????</dt>
+		<dt>????????????????</dt>
+	</dl>
+  
+ </BODY>
+</HTML>

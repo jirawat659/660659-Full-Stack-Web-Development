@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Layout 2</title>
+    <!-- Internal style sheet -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        div.container {
+            width: 100%;
+            min-height: 100vh;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Style */
+        header {
+            padding: 1em;
+            color: black;
+            background-color: #87CEEB;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            background-color: #ADD8E6;
+            padding: 10px;
+        }
+
+        marquee img {
+            width: 80px;
+            height: 80px;
+            margin: 0 30px;
+        }
+
+        /* Horizontal Navigation */
+        div.horizontal-nav {
+            background-color: #B0C4DE;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+        }
+
+        div.horizontal-nav a {
+            display: inline-block;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        div.horizontal-nav a img {
+            width: 80px;
+            height: auto;
+            border: none;
+        }
+
+        div.horizontal-nav a:hover img {
+            opacity: 0.8;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 180px;
+            padding: 10px;
+            background-color: #90EE90;
+            border: 2px solid black;
+        }
+
+        nav h2 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 5px;
+        }
+
+        nav ul a {
+            display: block;
+            text-decoration: none;
+        }
+
+        nav ul a img {
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+
+        nav ul a:hover img {
+            opacity: 0.8;
+        }
+
+        /* Article Style */
+        article {
+            flex: 1;
+            background-color: #5DADE2;
+            padding: 1em;
+            min-height: 350px;
+        }
+
+        /* Footer Style */
+        footer {
+            padding: 1em;
+            color: white;
+            background-color: #2C3E50;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header with Marquee -->
+        <header>
+            <h1>My Web Site</h1>
+            <p>
+                <marquee behavior="scroll" direction="left" scrollamount="6099">
+                    <img src="picture\p_a1.gif"
+                        alt="butterfly">
+                    <img src="picture\p_a1.gif"
+                        alt="butterfly">
+                    <img src="picture\p_a1.gif"
+                        alt="butterfly">
+                    <img src="picture\p_a1.gif"
+                        alt="butterfly">
+                </marquee>
+            </p>
+        </header>
+
+        <!-- Horizontal Navigation Bar -->
+        <div class="horizontal-nav">
+            <a href="660659home.html" target="iframe_a"><img src="button/home1.jpg" alt="HOME"></a>
+            <a href="660659study.html" target="iframe_a"><img src="button/index1.jpg" alt="STUDY"></a>
+            <a href="viewBuild/album/index1.html" target="iframe_a"><img src="button/gallery1.jpg" alt="GALLEY"></a>
+            <a href="webvideo.html" target="iframe_a"><img src="button/video1.jpg" alt="VIDEO"></a>
+            <a href="660659MyWebSite.html" target="iframe_a"><img src="button/contact1.jpg" alt="CONTACT"></a>
+            <!--<a href="https://www.google.com/" target="_blank"><img src="button/google.png" alt="Google"></a>-->
+
+        </div>
+
+        <!-- Main Content: Sidebar + Article -->
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav>
+                <h2>Menu List</h2>
+                <ul>
+                    <li><a href="660659home.html" target="iframe_a"><img src="button/home1.jpg" alt="HOME"></a></li>
+                    <li><a href="660659study.html" target="iframe_a"><img src="button/index1.jpg" alt="STUDY"></a></li>
+                    <li><a href="viewBuild/album/index1.html" target="iframe_a"><img src="button/gallery1.jpg"
+                                alt="GALLEY"></a></li>
+                    <li><a href="webvideo.html" target="iframe_a"><img src="button/video1.jpg" alt="VIDEO"></a></li>
+                    <li><a href="660659MyWebSite.html" target="iframe_a"><img src="button/contact1.jpg"
+                                alt="CONTACT"></a></li>
+                    <!--<li><a href="https://www.google.com/" target="_blank"><img src="button/google.png" alt="Google"></a>-->
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Article with iframe -->
+            <article>
+                <iframe height="1000px" width="100%" src="660659home.html" name="iframe_a"
+                    style="border:none; background-color: #5DADE2;"></iframe>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer>Copyright &copy;cs3493 660659 Jirawat Junlawatilert</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Exercises</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 16px;
+    }
+
+    h2 {
+      margin-top: 28px;
+    }
+
+    input {
+      padding: 6px;
+      margin: 4px 2px;
+      border: 1px solid #aaa;
+    }
+
+    button {
+      padding: 6px 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 8px;
+      padding: 8px;
+      background: #eef;
+      border: 1px solid #aac;
+      white-space: pre-wrap;
+      display: none;
+    }
+
+    hr {
+      margin-top: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>ข้อ 1: ระบบตัดเกรด</h2>
+  ชื่อ: <input type="text" id="s1-name" value="A">
+  คะแนน: <input type="text" id="s1-scores" value="80,65,40">
+  <button onclick="runQ1()">Run</button>
+  <div class="result" id="out1"></div>
+
+  <hr>
+  <h2>ข้อ 2: ปริมาตรทรงกลม</h2>
+  รัศมี: <input type="number" id="s2-r" value="5">
+  <button onclick="runQ2()">Run</button>
+  <div class="result" id="out2"></div>
+
+  <hr>
+  <h2>ข้อ 3: ระบบจัดการสต็อกสินค้า</h2>
+  ชื่อสินค้า: <input type="text" id="s3-name" value="Laptop">
+  จำนวน: <input type="number" id="s3-amount" value="1">
+  <button onclick="runQ3('add')">เพิ่มสินค้า (Add)</button>
+  <button onclick="runQ3('sell')">ขายสินค้า (Sell)</button>
+  <button onclick="runQ3('total')">ดูมูลค่ารวม</button>
+  <div class="result" id="out3"></div>
+
+  <hr>
+  <h2>ข้อ 4: คำนวณค่าปรับคืนหนังสือ</h2>
+  วันกำหนดส่ง (YYYY-MM-DD): <input type="text" id="s4-date">
+  <script>
+    const todayQ4 = new Date();
+    document.getElementById('s4-date').value = `${todayQ4.getFullYear()}-${String(todayQ4.getMonth() + 1).padStart(2, '0')}-${String(todayQ4.getDate()).padStart(2, '0')}`;
+  </script>
+  <button onclick="runQ4()">Run</button>
+  <div class="result" id="out4"></div>
+
+  <hr>
+  <h2>ข้อ 5: ระบบตรวจคนเข้า (อายุต้อง 20 ปีขึ้นไป)</h2>
+  <button onclick="checkEntry()">Run</button>
+
+  <hr>
+  <h2>ข้อ 6: คำนวณราคาสุทธิพร้อมภาษี</h2>
+  <button onclick="calcPrice()">Run</button>
+
+  <hr>
+  <h2>ข้อ 7: ระบบสั่งกาแฟ</h2>
+  <button onclick="orderCoffee()">Run</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

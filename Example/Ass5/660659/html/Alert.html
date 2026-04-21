@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Example</title>
+
+    <link href="../bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="p-4">
+
+    <div class="alert alert-danger" role="alert">
+        ข้อผิดพลาด: login หรือ password ไม่ถูกต้อง
+    </div>
+
+    <div class="alert alert-warning" role="alert">
+        คำเตือน: พื้นที่จัดเก็บข้อมูลเหลือน้อย
+    </div>
+    <br>
+    <br>
+    <div class="alert alert-warning">
+        <h5 class="alert-heading text-danger">คำเตือน</h5>
+        <div class="small">
+            พื้นที่จัดเก็บข้อมูลของท่านเหลือน้อย กรุณา...<br><br>
+            สำหรับรายละเอียดเพิ่มเติม
+            <a href="#" class="alert-link">คลิกที่นี่</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="alert alert-warning alert-dismissible fade show">
+        <h5 class="alert-heading">Warning</h5>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, molestias inventore? Voluptates dolorum earum ratione...</div>
+        <button class="btn-close" data-bs-dismiss="alert">
+        </button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด JavaScript พื้นฐาน</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .output {
+            color: blue;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>ผลลัพธ์แบบฝึกหัด JavaScript </h2>
+
+    <div class="box">
+        <h3>ข้อที่ 1: การจัดการข้อมูลพื้นฐานใน Array</h3>
+        <button onclick="runExercise1()">แสดงผลลัพธ์</button>
+        <div id="output1" class="output"></div>
+    </div>
+
+    <div class="box">
+        <h3>ข้อที่ 2: การกรอง (Filter) และการอ่านข้อมูล (Map)</h3>
+        <button onclick="runExercise2()">แสดงผลลัพธ์</button>
+        <div id="output2" class="output"></div>
+    </div>
+
+    <div class="box">
+        <h3>ข้อที่ 3: การแก้ไขและถอดข้อมูลด้วย Splice</h3>
+        <button onclick="runExercise3()">แสดงผลลัพธ์</button>
+        <div id="output3" class="output"></div>
+    </div>
+
+    <div class="box">
+        <h3>ข้อที่ 4: การวนลูปและการตรวจสอบเงื่อนไข</h3>
+        <button onclick="runExercise4()">แสดงผลลัพธ์</button>
+        <div id="output4" class="output"></div>
+    </div>
+
+    <div class="box">
+        <h3>ข้อที่ 5: การเขียนโปรแกรมเชิงวัตถุ (OOP) เบื้องต้น</h3>
+        <button onclick="runExercise5()">แสดงผลลัพธ์</button>
+        <div id="output5" class="output"></div>
+
+    </div>
+    <button onclick="console.clear()">เคลียร์หน้าจอ Console</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

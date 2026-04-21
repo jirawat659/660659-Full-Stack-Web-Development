@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Layout</title>
+    <!-- สร้าง Internel style sheet ไว้สำหรับเป็นรูปแบบของการสร้างเว็บ -->
+    <style>
+        div.container {
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        header,
+        footer {
+            padding: 1em;
+            color: white;
+            background-color: black;
+            clear: left;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            width: 160px;
+            height: 780px;
+            margin: 0;
+            padding:
+                1em;
+            background-color: #FFCCFF;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul a {
+            text-decoration: blink;
+        }
+
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+        .menu{
+            background: black;
+            color: white;
+            text-decoration: none;
+            padding: 8px 55px;
+            margin: 2px;
+            display: inline-block;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!--tag <div> โดยเรียก็ช้งาน class คือ container ซึ่งกำหนใน internal style sheet ด้านบน -->
+    <div class="container">
+        <header>
+            <h1>My Web Site</h1>
+        </header>
+        <nav>
+            <h1>Menu List</h1>
+            <ul>
+                <li><a href="660659home.html" target="iframe_a"><img src="button\home1.jpg" width="150"></a></11>
+                <!--<li class="menu"><a href="660659study.html" target="iframe_a">study</a></11>
+                <li class="menu" style="padding: 8px 48px;"><a href="660659MyWebSite.html" target="iframe_a">contact</a></11>-->
+                <li><a href="List.html" target="iframe_a">List</a></li>
+                <li><a href="testTable.html" target="iframe_a">testTable</a></li>
+                <li><a href="index.html" target="iframe_a"><img src="button\index1.jpg" width="150"></a></li>
+                <li><a href="webvideo.html" target="iframe_a"><img src="button\video1.jpg" width="150"></a></li>
+                <li><a href="viewBuild/album/index1.html" target="iframe_a"><img src="button\gallery1.jpg" width="150"></a></li>
+                <li><a href="https://www.google.com/" target="blank"><img src="button\google.png" width="150"></a></li>
+            </ul>
+        </nav>
+        <article>
+            <iframe height="800px" width="100%" src="index.html" name="iframe_a" style="border:none; "></iframe>
+        </article>
+        <footer>Copyright &copy; Jirawat Junlawatilert</footer>
+    </div>
+</body>
+
+</html>

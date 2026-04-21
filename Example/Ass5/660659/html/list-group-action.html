@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Group Example</title>
+
+<link href="../bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="../bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function list_click(event) {
+    const btn = event.target.innerText;
+    alert(btn);
+}
+</script>
+
+</head>
+
+<body class="p-4">
+
+<ul class="list-group" style="max-width: 250px">
+
+<button class="list-group-item list-group-item-action active"
+        onclick="list_click(event)">
+    รายการสินค้า
+</button>
+
+<button class="list-group-item list-group-item-action disabled"
+        onclick="list_click(event)">
+    วิธีการสั่งซื้อ
+</button>
+
+<button class="list-group-item list-group-item-action"
+        onclick="list_click(event)">
+    แจ้งการชำระเงิน
+</button>
+
+</ul>
+
+</body>
+</html>
